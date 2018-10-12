@@ -17,8 +17,10 @@ class ViewController : UIViewController {
     let NUMBERTOGUESS : Int = Int(arc4random_uniform(10) + 1)
     // generate random number between 1 and 10
     
+    //let guessNumberLable = UILabel()
+    // comment out the checking var
+    
     let questionLable = UILabel()
-    let guessNumberLable = UILabel()
     let numberTextField = UITextField()
     let answerLable = UILabel()
     let answerButton = UIButton()
