@@ -76,11 +76,11 @@ class ViewController : UIViewController {
         
         let numberEnter : Int =  Int(numberTextField.text!)!
         
-        if numberEnter != NUMBERTOGUESS {
-            answerLable.text = " Sorry, the correct number is: \(NUMBERTOGUESS) "
+        if numberEnter > 10 || numberEnter <= 0  {
+            answerLable.text = " Please, put a valid number! "
         }
-        else if numberEnter > 10 {
-            answerLable.text = "Please, put a valid number!"
+        else if numberEnter != NUMBERTOGUESS {
+            answerLable.text = "Sorry, the correct number is: \(NUMBERTOGUESS)"
         }
         else {
             answerLable.text = "You got it! The correct number is: \(NUMBERTOGUESS) "
